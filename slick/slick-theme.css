@@ -88,7 +88,12 @@
 }
 .slick-prev:before
 {
-    content: '←';
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/square-caret-left-solid.svg);
+    background-repeat: no-repeat;
 }
 [dir='rtl'] .slick-prev:before
 {
@@ -178,18 +183,22 @@
 .slick-dots li button:before
 {
     font-family: 'slick';
-    font-size: 6px;
+    font-size: 20px;
     line-height: 20px;
 
     position: absolute;
     top: 0;
     left: 0;
 
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
 
-    content: '•';
+    content: '';
     text-align: center;
+    display: inline-block;
+
+    background-color: black;
+    border-radius: 10px;
 
     opacity: .25;
     color: black;
